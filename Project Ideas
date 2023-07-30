@@ -1,0 +1,35 @@
+# IDEA 1 #
+
+Text-Guided 3D Shape Generation
+
+Developing a system that generates 3D shapes from textual descriptions
+
+Dataset:  ShapeNet  ScanObjectNN
+
+Modifications: shapes with colors that match the given text description
+
+* https://arxiv.org/pdf/2203.14622v1.pdf
+____________________________________________
+
+# IDEA 2 #
+
+Single Image Reconstruction
+
+Paper: 
+
+Pix2Vox: Context-aware 3D Reconstruction from Single and Multi-view Images
+
+https://openaccess.thecvf.com/content_ICCV_2019/papers/Xie_Pix2Vox_Context-Aware_3D_Reconstruction_From_Single_and_Multi-View_Images_ICCV_2019_paper.pdf
+
+
+Dataset: 
+
+ModelNet
+https://modelnet.cs.princeton.edu
+
+
+Modifications:
+ 
+- Addition of color prediction
+- In the paper it’s stated that the reconstruction results of are still with low resolution.
+The reconstruction resolutions can be improved by introducing GANs
