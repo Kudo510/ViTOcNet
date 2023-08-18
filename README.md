@@ -3,12 +3,12 @@
 The project aims to improve the performance of the Occupancy Network by incorporating the Vision Transformer (ViT) architecture into the model.
 
 Please view our slides here:  <a href="Final%20Presentation%20-%20ML3D.pdf"><img src="https://img.shields.io/badge/PDF-Slide-brightgreen"/></a>   
-Please view our report here: <a href="Report.pdf"><img src="https://img.shields.io/badge/PDF-Report-red"/></a>   
+Please view our report here: <a href="ML43D_Final_Report.pdf"><img src="https://img.shields.io/badge/PDF-Report-red"/></a>   
 
 
 ## 1. How to run this project?
 Please refer to the Jupyter Notebook file for training, mesh generation, and evaluation
-- ModifiedOccNet.ipynb  
+- ViTOcNet.ipynb  
 ## 2. Dataset
 Download the preprocessed ShapeNet dataset and please prepare a large space (better if more than about 73.4 GB) for it.  
 A GPU environment is preferred.  Dataset will not be published due to large data size but dowload script is a part of the Jupyter Notebook mentioned above.
@@ -71,13 +71,13 @@ Dividing the image and adding positional embeddings:
 - The Transformer encoder enriches embeddings through the multi-head self-attention layers. One notable difference from the original encoder is that ViT adds the positional encodings to the input of each multi-head attention layer.
 - ViT does not have a decoder as it is primarily used for image classification tasks. However, the output embeddings can be used for various downstream tasks.
 
-## **3. Proposed Architecture**
+## **3. Proposed Architecture ( ViTOcNet )**
 ![](images/vit-occ.png)
 
 The proposed network for 3D reconstruction from a single image consists of:
-   -   The ResNet Backbone for feature extraction used in Occupancy Network is replaced with Vision Transformer
-   -   Conditional Group Norm was used for only merging feature vector and the position vector
-   -   In decoder, batch norms are used for normalization.
+   -   The ResNet Backbone for feature extraction used in Occupancy Network is replaced with Vision Transformer.
+   -   Conditional batch normalization was utilized to effectively integrate the point cloud and embedding data.
+   -   Standard CNN was employed instead of fully-connected ResNet-blocks to generate occupancy probabilities.
 
 By incorporating the Vision Transformer into the Occupancy Network, we aimed to leverage the powerful capabilities of self-attention and improve the performance of 3D reconstruction tasks.
 
