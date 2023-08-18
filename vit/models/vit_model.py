@@ -27,6 +27,7 @@ from torchvision.datasets.mnist import MNIST
 #    After consecutive transformer encoders
 #    A classification Multi Layer Perceptron block is used for the final classification task only on the special classification token,
 #    which by the end of this process has global information about the picture.
+#For referance please refer to "https://medium.com/mlearning-ai/vision-transformers-from-scratch-pytorch-a-step-by-step-guide-96c3313c2e0c"
 class ViT(nn.Module):
     #divides images into #n patches
     def patchify(self, images, n_patches):
