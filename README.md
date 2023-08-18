@@ -5,7 +5,6 @@ The project aims to improve the performance of the Occupancy Network by incorpor
 Please view our slides here:  <a href="Final%20Presentation%20-%20ML3D.pdf"><img src="https://img.shields.io/badge/PDF-Slide-brightgreen"/></a>   
 Please view our report here: <a href="Report.pdf"><img src="https://img.shields.io/badge/PDF-Report-red"/></a>   
 
-It is the course of **Machine Learning for 3D Geometry (IN2392)** from TU Munich.  
 
 ## 1. How to run this project?
 Please refer to the Jupyter Notebook file for training, mesh generation, and evaluation
